@@ -3,4 +3,5 @@ _site
 *.hi
 site
 cabal*
+.cabal*
 dist/
