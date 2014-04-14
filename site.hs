@@ -7,8 +7,14 @@ import           Text.Pandoc
 
 
 --------------------------------------------------------------------------------
+
+config :: Configuration
+config = defaultConfiguration {
+         deployCommand = "rsync -ave 'ssh' _site/ arjun@maple:~/blog/"
+}
+
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler

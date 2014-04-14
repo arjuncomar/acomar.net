@@ -22,13 +22,12 @@ library that aims to bring idiomatic Haskell bindings to the OpenCV
 computer vision library. As part of this I wrote bindings to the full 
 OpenCV API including the C++ only portions. These bindings are available 
 at [my fork](https://www.github.com/arjuncomar/opencv_contrib.git).
-I am to contribute these bindings and wrappers back to OpenCV proper,
+I aim to contribute these bindings and wrappers back to OpenCV proper,
 and I'm setting up for inclusion with the 3.0 release.
 
 I'm also working on a simple media server called Jump that will
-allow users to set up their own websites to share with friends and family.
+allow users to set up their own youtube-like sites to share with friends and family.
 
 My other interests are a bit scattered. I enjoy music, bowyery, weightlifting,
 role-playing games, books, beer, and the occasional video game. Posts on these 
 topics may occasionally pop up on this blog!
-
