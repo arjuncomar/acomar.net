@@ -1,6 +1,13 @@
----
-title: About
----
+----
+title: About Me
+----
+
+> Contact Info
+> ------------
+> * **Email:** nrujac@gmail.com
+> * **Phone:** (630)403-8154
+> * **Github:** www.github.com/arjuncomar
+> * **Twitter:** @ArjunComar
 
 Hi all, I'm a software developer and consultant living in the
 Washington D.C. Metropolitan area. I got my bachelors in
@@ -24,3 +31,4 @@ allow users to set up their own websites to share with friends and family.
 My other interests are a bit scattered. I enjoy music, bowyery, weightlifting,
 role-playing games, books, beer, and the occasional video game. Posts on these 
 topics may occasionally pop up on this blog!
+
