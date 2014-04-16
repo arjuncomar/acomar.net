@@ -7,6 +7,27 @@ body {
     font-weight: 400;
 }
 
+ul {
+    list-style-type:none
+}
+
+div.content {
+    text-align: justify;
+}
+
+a:hover {
+    background-color: #555;
+    color: #FFFFFF;
+}
+
+:link {
+    color: #555;
+}
+
+:visited {
+    color: gray;
+}
+
 div#header {
     margin-bottom: 30px;
     padding: 12px 0px 12px 0px;
@@ -19,6 +40,11 @@ div#logo a {
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+}
+
+div#logo a:hover {
+    background-color: white;
+    color: black;
 }
 
 div#header #navigation {
@@ -34,12 +60,29 @@ div#header #navigation a {
     text-transform: uppercase;
 }
 
+div#header #navigation a:hover {
+    color: white;
+}
+
 div#footer {
     color: #555;
     font-size: 18px;
     margin-top: 30px;
     padding: 12px 0px 12px 0px;
     text-align: center;
+}
+
+div#footer a:link {
+    color: #555;
+}
+
+div#footer a:visited {
+    color: #555;
+}
+
+div#footer a:hover {
+    color: white;
+    background: #555;
 }
 
 h1 {
@@ -54,12 +97,4 @@ div.info {
     color: #555;
     font-size: 14px;
     font-style: italic;
-}
-
-ul {
-    list-style-type:none
-}
-
-div.content {
-    text-align: justify;
 }
