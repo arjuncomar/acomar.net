@@ -1,6 +1,6 @@
-----
+---------------
 title: About Me
-----
+---------------
 
 Hi all, I'm a software developer and consultant living in the
 Washington D.C. Metropolitan area. I got my bachelors in
@@ -24,3 +24,11 @@ allow users to set up their own youtube-like sites to share with friends and fam
 My other interests are a bit scattered. I enjoy music, bowyery, weightlifting,
 role-playing games, books, beer, and the occasional video game. Posts on these 
 topics may occasionally pop up on this blog!
+
+About This Site
+---------------
+
+This site is generated using [Hakyll](http://jaspervdj.be/hakyll/index.html), the static
+site generator written in Haskell. The theme is extremely straight-forward and simple.
+If you like it, you can fork it at [github](https://github.com/arjuncomar/acomar.net).
+This site is very much a work in progress, so sorry about the rough edges!
