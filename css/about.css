@@ -1,5 +1,4 @@
 blockquote {
-    border-style: solid;
     border-width: 1px;
     float:right;
     padding-right: 10px;
@@ -7,9 +6,4 @@ blockquote {
 
 h2 {
     text-align: center;
-    text-decoration: underline;
-}
-
-h1 {
-    text-decoration: underline;
 }

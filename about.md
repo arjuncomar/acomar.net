@@ -2,13 +2,6 @@
 title: About Me
 ----
 
-> Contact Info
-> ------------
-> * **Email:** nrujac@gmail.com
-> * **Phone:** (630)403-8154
-> * **Github:** www.github.com/arjuncomar
-> * **Twitter:** @ArjunComar
-
 Hi all, I'm a software developer and consultant living in the
 Washington D.C. Metropolitan area. I got my bachelors in
 Computer Science from the Rose-Hulman Institute of Technology.

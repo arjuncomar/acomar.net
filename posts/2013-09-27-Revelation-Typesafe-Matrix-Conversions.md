@@ -1,5 +1,6 @@
 ---
 title: Typesafe Matrices for OpenCV
+description: Post in progress on implementing type safe matrices and the API planned for OpenCV
 mathjax: on
 ---
 
@@ -16,8 +17,8 @@ Example: Colorspace conversions
 It is a mistake to carry this approach over into the Haskell side
 
 Instead we can expose the types of our matrices
+    Row/Column size
     Channels/colorspace
-    Dimensionality
     element type
 
 Use DataKinds to restrict which types make valid Mats
@@ -35,5 +36,3 @@ Functions that work on all matrices but need to dispatch on the type can do so v
     The typeclassed functions will need to take a runtime witness for the lifted types (the matrice counts)
 
 Example: Colorspace conversions in Revelation
-    
-

@@ -13,6 +13,15 @@ config = defaultConfiguration {
          deployCommand = "rsync -ave 'ssh' _site/ arjun@maple:~/blog/"
 }
 
+feedConf :: FeedConfiguration
+feedConf = FeedConfiguration
+  { feedTitle = "Arjun Comar"
+  , feedDescription = "Personal Site"
+  , feedAuthorName = "Arjun Comar"
+  , feedAuthorEmail = "nrujac@gmail.com"
+  , feedRoot = "http://www.acomar.net"
+  }
+
 main :: IO ()
 main = hakyllWith config $ do
     match "images/*" $ do
@@ -55,15 +64,22 @@ main = hakyllWith config $ do
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
+    create ["atom.xml"] $ do
+      route idRoute
+      compile $ do
+        posts <- fmap (take 10) . recentFirst =<< loadAll "posts/*"
+        let atomCtx = listField "posts" (postCtx <> bodyField "description") 
+                      (return posts) <> constField "title" "atom.xml" <>
+                        defaultContext
+
+        renderAtom feedConf atomCtx posts
 
     match "index.html" $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
-                    listField "posts" postCtx (return posts) <>
-                    constField "title" "Home"                <>
-                    defaultContext
+                    defaultContext <> listField "posts" postCtx (return posts)
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
@@ -76,11 +92,11 @@ main = hakyllWith config $ do
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =
-    dateField "date" "%B %e, %Y" <>
-    defaultContext
+    defaultContext <>
+    dateField "date" "%B %e, %Y"
 
 pandocOptions :: WriterOptions
-pandocOptions = defaultHakyllWriterOptions { writerHTMLMathMethod = MathJax "" }
+pandocOptions = defaultHakyllWriterOptions { writerHTMLMathMethod = MathJax "http://cdn.mathjax.org/mathjax/latest/MathJax.js" }
 
 mathCtx :: Context a
 mathCtx = field "mathjax" $ \item -> do
