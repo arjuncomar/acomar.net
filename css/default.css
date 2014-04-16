@@ -34,21 +34,23 @@ div#header {
     font-family: "Open Sans Condensed"
 }
 
-div#logo a {
+div#title a {
     color: black;
     float: left;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+    font-family: "Open Sans Condensed"
 }
 
-div#logo a:hover {
+div#title a:hover {
     background-color: white;
     color: black;
 }
 
 div#header #navigation {
     text-align: right;
+    margin-top: 5px;
 }
 
 div#header #navigation a {
@@ -66,18 +68,15 @@ div#header #navigation a:hover {
 
 div#footer {
     color: #555;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 30px;
     padding: 12px 0px 12px 0px;
     text-align: center;
 }
 
-div#footer a:link {
+div#footer a {
     color: #555;
-}
-
-div#footer a:visited {
-    color: #555;
+    font-size:20px;
 }
 
 div#footer a:hover {
