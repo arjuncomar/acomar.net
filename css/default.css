@@ -44,12 +44,10 @@ div#footer {
 
 h1 {
     font-size: 24px;
-    text-align: center;
 }
 
 h2 {
     font-size: 20px;
-    text-align: center;
 }
 
 div.info {
@@ -60,4 +58,8 @@ div.info {
 
 ul {
     list-style-type:none
+}
+
+div.content {
+    text-align: justify;
 }
