@@ -27,6 +27,9 @@ My other interests are a bit scattered. I enjoy music, bowyery, weightlifting,
 role-playing games, books, beer, and the occasional video game. Posts on these 
 topics may occasionally pop up on this blog!
 
+If you're looking for a developer, full-time or contract, get in touch with me.
+I'm always happy to hear from interested parties.
+
 About This Site
 ---------------
 
